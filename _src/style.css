@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --cor-principal: #1B3561;
+    --cor-complementar: #C8DCFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+
+header {
+    background-color: var(--cor-principal);
+    padding: 5px;
+}
+
+header div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(1rem, 0.7vw, 2rem);
+}
+
+header div#options {
+    margin: 5px 0px;
+    justify-content: space-around;
+}
+
+header div img {
+    width: 2.5vw;
+}
+
+header div h1 {
+    font-size: clamp(1.5rem, 1.5vw, 2.5rem);
+}
+
+.header-opt {
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    width: 10%;
+    border-radius: 5px;
+}
+.header-opt:hover {
+    cursor: pointer;
+    background-color: #2d569d;
+}
+
+.header-opt img {
+    width: 1.5vw;
+    margin-right: 10px;
+}
+
+#search-opt {
+    width: 20%;
+    height: 3.5vh;
+    background-image: url("../_assets/icon-lupa-barra.png");
+    background-repeat: no-repeat;
+    background-size: 7%;
+    background-position: 0.2vw center;
+    border-radius: 5px;
+    background-color: var(--cor-complementar);
+    font-size: clamp(0.7rem, 1vw, 1.7rem);
+    text-indent: 9%;
+}
