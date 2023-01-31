@@ -1,0 +1,4 @@
+-remover a logo da [inspiração] como favicon  --feito
+-fazer a responsividade de tudo :P
+-terminar de colocar todas opções
+-arrumar os nomes dos items

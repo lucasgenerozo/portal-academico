@@ -21,12 +21,14 @@ body {
     width: 100vw;
     height: 100vh;
     font-family: 'Nunito', sans-serif;
-    color: white;
 }
+
+/* HEADER */
 
 header {
     background-color: var(--cor-principal);
     padding: 5px;
+    color: white;
 }
 
 header div {
@@ -38,7 +40,7 @@ header div {
     font-size: clamp(1rem, 0.7vw, 2rem);
 }
 
-header div#options {
+header div#header-options {
     margin: 5px 0px;
     justify-content: space-around;
 }
@@ -77,4 +79,40 @@ header div h1 {
     background-color: var(--cor-complementar);
     font-size: clamp(0.7rem, 1vw, 1.7rem);
     text-indent: 9%;
+}
+
+/* MAIN */
+
+main {
+    width: 100%;
+}
+
+main div#options {
+    width: 95%;
+    height: 80vh;
+    display: flex;
+    padding: 10px;
+    margin: 4.5vh auto 0vh;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+
+.item {
+    width: 16%;
+    height: 21%;
+    padding: 1.7em;
+    margin: 10px;
+    background-color: var(--cor-principal);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.item img {
+    width: 25%;
+}
+
+.item h3 {
+    margin: 1em 0px 0em;
 }
