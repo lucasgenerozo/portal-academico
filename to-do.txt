@@ -3,3 +3,7 @@
 -terminar de colocar todas opções
 -arrumar os nomes dos items --feito
 -mudar a largura dos items pra fica mais efeciente
+-add figma do projeto e status do projeto no readme --feito
+-colocar em ordem alfabetica
+-colocar clamp nos items
+-terminar home

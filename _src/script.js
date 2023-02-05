@@ -12,7 +12,17 @@ const itemsImagesNames = [
     'boleto',
     'campanhas-soli',
     'certificados',
-    'impressao'
+    'impressao',
+    'consultas',
+    'contratos',
+    'declaracao-calend',
+    'declaracao-imp',
+    'disciplinas-dep',
+    'ecom',
+    'horario-aulas',
+    'localizacao-prof',
+    'materiais-xerox',
+    'matricula-vet'
 ]
 
 const itemsText = [
@@ -27,7 +37,17 @@ const itemsText = [
     'Boleto 2ª via',
     'Campanhas Solidárias',
     'Certificados',
-    'Consulta de Impressão e Xerox'
+    'Consulta de Impressão e Xerox',
+    'Consultar Resevas',
+    'Contratos',
+    'Declaração Calendário de Provas',
+    'Declaração Imposto de Renda',
+    'Disciplinas Dependência',
+    'E-com(De/Para)',
+    'Horário das Aulas',
+    'Localização de Professor',
+    'Materiais Xerox',
+    'Matrícula Veterano'
 ]
 
 function generateItems () {
@@ -35,7 +55,7 @@ function generateItems () {
         div_options.innerHTML +=
         `
         <div class="item" id="opt-${itemsImagesNames[i]}">
-                <img src="_assets/icon-${itemsImagesNames[i]}.png" alt="Icone de ${itemsText[i]}">
+                <img src="_assets/home/icon-${itemsImagesNames[i]}.png" alt="Icone de ${itemsText[i]}">
                 <h3>${itemsText[i]}</h3>
         </div>
         `

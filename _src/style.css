@@ -72,7 +72,7 @@ header div h1 {
 #search-opt {
     width: 20%;
     height: 3.5vh;
-    background-image: url("../_assets/icon-lupa-barra.png");
+    background-image: url("../_assets/home/icon-lupa-barra.png");
     background-repeat: no-repeat;
     background-size: 7%;
     background-position: 0.2vw center;
@@ -102,7 +102,7 @@ main div#options {
 }
 
 .item {
-    width: 16%;
+    width: 13%;
     height: 21%;
     padding: 1.7em;
     margin: 10px;
@@ -133,4 +133,20 @@ main div#options {
 
 #opt-impressao {
     font-size: clamp(0.6rem, 0.75vw, 1.4rem);
+}
+
+#opt-declaracao-calend {
+    font-size: clamp(0.5rem, 0.75vw, 1.3rem);
+}
+
+#opt-declaracao-imp {
+    font-size: clamp(0.7rem, 0.78vw, 1.5rem);
+}
+
+#opt-disciplinas-dep {
+    font-size: clamp(0.7rem, 0.78vw, 1.5rem);
+}
+
+#opt-localizacao-prof {
+    font-size: clamp(0.7rem, 0.78vw, 1.5rem);
 }
