@@ -5,6 +5,8 @@
 :root {
     --cor-principal: #1B3561;
     --cor-complementar: #C8DCFF;
+    --cor-alternativa: #f37021;
+    --cor-suplementar: #ed8a4c;
 }
 
 * {
@@ -28,7 +30,7 @@ body {
 
 /* main */
 
-main {
+#main {
     width: 25%;
     min-width: 360px;
     height: 60%;
@@ -37,26 +39,27 @@ main {
     color: white;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 #logo {
     width: 30%;
-    border: 3px solid var(--cor-principal);
+    border: 3px solid var(--cor-alternativa);
     border-radius: 100%;
     margin: -10% auto 2vh;
     padding: 3%;
     background-color: var(--cor-principal);
 }
 
-main h1, main h2 {
+#main h1, #main h2 {
     text-align: center;
 }
 
-main h1 {
+#main h1 {
     font-size: clamp(1.5rem, 1.5vw, 2.5rem);
 }
 
-main h2 {
+#main h2 {
     font-size: clamp(1rem, 1.5vw, 2rem);
     margin-bottom: 2vh;
 }
@@ -73,6 +76,12 @@ main h2 {
     width: 65%;
     border-radius: 10px;
     font-size: clamp(0.7rem, 1vw, 1.7rem);
+    padding: 5px;
+}
+
+.login-field #user-login:invalid {
+    outline: 3px solid red;
+    
 }
 
 .login-field img {
@@ -80,14 +89,14 @@ main h2 {
     margin: 0vh 1vw;
 }
 
-.login-field #icon-olho {
+.login-field .btn-adicionais {
     width: 10%;
     padding: 1%;
     transition: all 0.5s;
     border-radius: 100%;
     margin: 0vh 0.6vw;
 }
-.login-field #icon-olho:hover {
+.login-field .btn-adicionais:hover {
     cursor: pointer;
     background-color: var(--cor-complementar);
 }
@@ -101,4 +110,27 @@ input::-webkit-inner-spin-button {
 
 input[type=number] {
     -moz-appearance: textfield;
+}
+
+.btn {
+    width: 90%;
+    color: white;
+    background-color: var(--cor-alternativa);
+    border: none;
+    border-radius: 10px;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    margin: 1.5vh 0vw;
+}
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--cor-suplementar);
+}
+
+a {
+    color: var(--cor-complementar);
+}
+a:visited {
+    color: var(--cor-complementar);
 }
