@@ -22,7 +22,15 @@ const itemsImagesNames = [
     'horario-aulas',
     'localizacao-prof',
     'materiais-xerox',
-    'matricula-vet'
+    'matricula-vet',
+    'monografia',
+    'nap',
+    'notas',
+    'pesquisas',
+    'registrar-pre',
+    'requisicoes',
+    'revisao',
+    'troca-de-prof'
 ]
 
 const itemsText = [
@@ -47,7 +55,15 @@ const itemsText = [
     'Horário das Aulas',
     'Localização de Professor',
     'Materiais Xerox',
-    'Matrícula Veterano'
+    'Matrícula Veterano',
+    'Monografia',
+    'N.A.P. Núcleo de Apoio Psicopedagógico',
+    'Notas e Faltas',
+    'Pesquisas PIC/PIBIC/PIBIT',
+    'Registrar Presença em Eventos',
+    'Requisições',
+    'Revisão de Provas/Exames',
+    'Troca de Professores'
 ]
 
 function generateItems () {

@@ -1,9 +1,9 @@
 # Projeto Portal Academico
 
 Estado do projeto:
-[x] Prototipação
-[x] Em construção (WIP)
-[ ] Terminado
+- [x] Prototipação
+- [x] Em construção (WIP)
+- [ ] Terminado
 
 Este é um projeto sendo feito com o intuito de estudar. As mudanças vão sendo feitas de pouco a pouco no tempo livre que eu tiver.
 

@@ -1,10 +1,13 @@
 -remover a logo da [inspiração] como favicon  --feito
 -fazer a responsividade de tudo :P
--terminar de colocar todas opções
+-terminar de colocar todas opções   --feito
 -arrumar os nomes dos items --feito
 -mudar a largura dos items pra fica mais efeciente --feito
 -add figma do projeto e status do projeto no readme --feito
--colocar em ordem alfabetica
+-colocar em ordem alfabetica    --feito
 -colocar clamp nos items
 -terminar home --sendo feito, facul ta pegando
 -adicionar wip no readme --feito
+-deixar um embaixo do outro no readme   --feito
+
+-adicionar uma tela de ajuda pra aquele botao de ajuda

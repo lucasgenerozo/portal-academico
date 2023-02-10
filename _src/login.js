@@ -10,22 +10,9 @@ btnEntrar.addEventListener('click', (e) => {
 function visibSenha() {
 
     //dei uma pesquisada e nn consegui outro jeito de mostrar a senha sem ser na gambiarra
-    if (campoSenha.classList.contains('fechado')) {
-        //aqui muda pra aberto
-        btnVisib.src = "_assets/login/icon-eye-open.png";
-        campoSenha.classList.remove('fechado');
-        campoSenha.type = "text"
-        // campoSenha.type = "text"
-    } else {
-        //e aqui muda pra fechado
-        btnVisib.src = "_assets/login/icon-eye-close.png";
-        campoSenha.classList.add('fechado');
-        campoSenha.type = "password"
-        // campoSenha.type = "password"
-    }
+    let infos = (campoSenha.classList.contains('fechado')) ? ['close', '', 'text'] : ['open', 'fechado', 'password'];
 
-    //acho que da pra otimizar esse if
-    // ? : ; e retorna dentro de uma array a loc do olho, o estado e o tipo do input
-    //no caso do class e so nn passar nenhum no remov
-    //enfim nn da mais tempo hj
+    btnVisib.src = `_assets/login/icon-eye-${infos[0]}.png`;
+    campoSenha.classList = infos[1];
+    campoSenha.type = infos[2];
 }
