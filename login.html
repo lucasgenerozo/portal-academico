@@ -19,7 +19,7 @@
         <label for="user-login" class="login-field">
             <img src="_assets/login/icon-user.png" alt="Icone de usuário">
             <input type="number" id="user-login" placeholder="Digite sua matricula">
-            <img src="_assets/login/icon-interrogacao.png" alt="Icone de Ponto de Interrogação" id="icon-interrogacao" class="btn-adicionais">
+            <img src="_assets/login/icon-interrogacao.png" alt="Icone de Ponto de Interrogação" id="icon-interrogacao" class="btn-adicionais" onclick="help('flex')">
         </label>
 
         <label for="user-password" class="login-field">
@@ -35,6 +35,15 @@
 
         <!-- <p>Ainda não fez seu primeiro acesso?</p> -->
         <input type="button" value="Cadastre-se" class="btn">
-    </main>
+    </form>
+
+    <aside id="alert-help">
+        <div>
+            <h2>Ajuda</h2>
+            <p>Caso não tenha informações de acesso, isso provavelmente significa que você não é um dos usuários de teste. Afinal isso é um teste, mas pode usar o user <span>PLACEHOLDER</span> e a senha <span>PLACEHOLDER</span> para testar!</p>
+            <p>Qualquer coisa, pode entrar em contato pelo twitter <span>@luscapatoo</span></p>
+            <input type="button" value="FECHAR" onclick="help('none')">
+        </div>
+    </aside>
 </body>
 </html>

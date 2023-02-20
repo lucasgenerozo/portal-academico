@@ -5,9 +5,9 @@
 -mudar a largura dos items pra fica mais efeciente --feito
 -add figma do projeto e status do projeto no readme --feito
 -colocar em ordem alfabetica    --feito
--colocar clamp nos items
--terminar home --sendo feito, facul ta pegando
+-colocar clamp nos items    --feito
+-terminar home -sendo feito, facul ta pegando --feito
 -adicionar wip no readme --feito
 -deixar um embaixo do outro no readme   --feito
 
--adicionar uma tela de ajuda pra aquele botao de ajuda
+-adicionar uma tela de ajuda pra aquele botao de ajuda  --feito
