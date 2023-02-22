@@ -1,12 +1,13 @@
 const btnVisib = document.getElementById("icon-olho");
 const campoSenha = document.getElementById("user-password");
-const btnEntrar = document.getElementById("main");
+const btnEntrar = document.getElementById("btn-entrar");
 
 const alerta = document.getElementById('alert-help');
 
 btnEntrar.addEventListener('click', (e) => {
     e.preventDefault();
     // essa função é provisória enqnt nao é feita a de logar
+    window.location.href = "index.html"
 })
 
 function visibSenha() {

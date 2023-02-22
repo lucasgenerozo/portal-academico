@@ -23,22 +23,27 @@ body {
     width: 100vw;
     height: 100vh;
     font-family: 'Nunito', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: left;
 
     background-image: url(../_assets/login/fundo-login.webp);
-    background-position: center;
+    background-position: 10vw;
     background-size: 100%;
 }
 
 /* main */
 
+main {
+    width: 45%;
+    background-color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #main {
-    width: 25%;
+    width: 50%;
     min-width: 360px;
     height: 60%;
-    margin-left: 15vw;
     background-color: var(--cor-principal);
     border-radius: 10px;
     color: white;
@@ -75,6 +80,7 @@ body {
     flex-direction: row;
     justify-content: left;
     align-items: center;
+    margin: 1vh 0vw;
 }
 
 .login-field input {
@@ -141,6 +147,10 @@ a:visited {
     color: var(--cor-complementar);
 }
 
+#btn-entrar {
+    margin-top: 5vh;
+}
+
 /* ALERTA DE AJUDA (FULLSCREEN) */
 
 #alert-help {
@@ -151,6 +161,7 @@ a:visited {
     display: flex;
     align-items: center;
     justify-content: center;
+    top: 0;
 }
 
 #alert-help div {

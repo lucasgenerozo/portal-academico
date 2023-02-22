@@ -89,7 +89,7 @@ main {
 }
 
 main div#options {
-    width: 95%;
+    width: 97%;
     height: 80vh;
     display: flex;
     flex-direction: row;
@@ -102,8 +102,9 @@ main div#options {
 }
 
 .item {
-    width: 13%;
-    height: 21%;
+    width: 11.3%;
+    height: 9vw;
+    flex-shrink: 1;
     padding: 1.7em;
     margin: 10px;
     background-color: var(--cor-principal);
@@ -111,9 +112,9 @@ main div#options {
     text-align: center;
     border-radius: 10px;
     transition: .5s all;
-    font-size: clamp(0.7rem, 0.83vw, 1.5rem);
+    font-size: clamp(0.6rem, 0.83vw, 1.5rem);
 }
-.item:hover {
+.item:hover, .item:focus {
     cursor: pointer;
     background-color: #2d569d;
 }
@@ -129,7 +130,7 @@ main div#options {
 /* OPTIONS ESPECIFICAS */
 
 #opt-atividades-comp {
-    font-size: clamp(0.6rem, 0.78vw, 1.5rem);
+    font-size: clamp(0.5rem, 0.78vw, 1.5rem);
 }
 
 #opt-impressao {
@@ -137,26 +138,38 @@ main div#options {
 }
 
 #opt-declaracao-calend {
-    font-size: clamp(0.55rem, 0.75vw, 1.3rem);
+    font-size: clamp(0.5rem, 0.7vw, 1.3rem);
 }
 
 #opt-declaracao-imp {
-    font-size: clamp(0.6rem, 0.78vw, 1.5rem);
+    font-size: clamp(0.5rem, 0.78vw, 1.5rem);
+}
+
+#opt-ecom {
+    font-size: clamp(0.55rem, 0.83vw, 1.5rem);
 }
 
 #opt-disciplinas-dep {
     font-size: clamp(0.6rem, 0.78vw, 1.5rem);
 }
 
-#opt-nap {
-    font-size: clamp(0.55rem, 0.83vw, 1.5rem);
-}
-
 #opt-localizacao-prof {
-    font-size: clamp(0.6rem, 0.78vw, 1.5rem);
+    font-size: clamp(0.55rem, 0.78vw, 1.5rem);
 }
 
-@media only screen and (max-device-width: 900px) {
+#opt-nap {
+    font-size: clamp(0.5rem, 0.67vw, 1.5rem);
+}
+
+#opt-pesquisas {
+    font-size: clamp(0.5rem, 0.83vw, 1.5rem);
+}
+
+#opt-registrar-pre {
+    font-size: clamp(0.50rem, 0.77vw, 1.5rem);
+}
+
+@media only screen and (max-device-width: 1000px) {
 
     main div#options {
         padding: 1px;

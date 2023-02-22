@@ -11,3 +11,5 @@
 -deixar um embaixo do outro no readme   --feito
 
 -adicionar uma tela de ajuda pra aquele botao de ajuda  --feito
+
+-arrumar a responsividade (e terminar ne) -SOCORRO

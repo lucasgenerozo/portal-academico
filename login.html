@@ -10,32 +10,34 @@
     <script src="_src/login.js" defer></script>
 </head>
 <body>
-    <form id="main">
-        <img src="_assets/home/icon-logo.png" alt="Logo" id="logo">
+    <main>
+        <form id="main">
+            <img src="_assets/home/icon-logo.png" alt="Logo" id="logo">
 
-        <h1>Portal Acadêmico</h1>
-        <h2>Bem vindo!</h2>
+            <h1>Portal Acadêmico</h1>
+            <h2>Bem vindo!</h2>
+            
+            <label for="user-login" class="login-field">
+                <img src="_assets/login/icon-user.png" alt="Icone de usuário">
+                <input type="number" id="user-login" placeholder="Digite sua matricula">
+                <img src="_assets/login/icon-interrogacao.png" alt="Icone de Ponto de Interrogação" id="icon-interrogacao" class="btn-adicionais" onclick="help('flex')">
+            </label>
 
-        <label for="user-login" class="login-field">
-            <img src="_assets/login/icon-user.png" alt="Icone de usuário">
-            <input type="number" id="user-login" placeholder="Digite sua matricula">
-            <img src="_assets/login/icon-interrogacao.png" alt="Icone de Ponto de Interrogação" id="icon-interrogacao" class="btn-adicionais" onclick="help('flex')">
-        </label>
+            <label for="user-password" class="login-field">
+                <img src="_assets/login/icon-key.png" alt="Icone de senha">
+                <input type="password" id="user-password" placeholder="Digite sua senha">
+                <img src="_assets/login/icon-eye-open.png" alt="Icone de olho Aberto" id="icon-olho" class="btn-adicionais" onclick="visibSenha()">
+            </label>
 
-        <label for="user-password" class="login-field">
-            <img src="_assets/login/icon-key.png" alt="Icone de senha">
-            <input type="password" id="user-password" placeholder="Digite sua senha">
-            <img src="_assets/login/icon-eye-open.png" alt="Icone de olho Aberto" id="icon-olho" class="btn-adicionais" onclick="visibSenha()">
-        </label>
+            <input type="submit" value="Entrar" class="btn" id="btn-entrar">
+            
+            <a href="_src/recuperacao-senha.html" target="_blank
+            ">Esqueceu sua senha?</a>
 
-        <input type="submit" value="Entrar" class="btn" id="btn-entrar">
-        
-        <a href="_src/recuperacao-senha.html" target="_blank
-        ">Esqueceu sua senha?</a>
-
-        <!-- <p>Ainda não fez seu primeiro acesso?</p> -->
-        <input type="button" value="Cadastre-se" class="btn">
-    </form>
+            <!-- <p>Ainda não fez seu primeiro acesso?</p> -->
+            <input type="button" value="Cadastre-se" class="btn">
+        </form>
+    </main>
 
     <aside id="alert-help">
         <div>

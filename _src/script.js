@@ -66,16 +66,32 @@ const itemsText = [
     'Troca de Professores'
 ]
 
+const items = document.getElementsByClassName("item")
+
+const btnSair = document.getElementById("opt-sair")
+
 function generateItems () {
     for (let i = 0; i < itemsImagesNames.length; i++) {
         div_options.innerHTML +=
         `
-        <div class="item" id="opt-${itemsImagesNames[i]}">
+        <div tabindex="${i + 5}" class="item" id="opt-${itemsImagesNames[i]}">
                 <img src="_assets/home/icon-${itemsImagesNames[i]}.png" alt="Icone de ${itemsText[i]}">
                 <h3>${itemsText[i]}</h3>
         </div>
         `
     }
+    //pro maximo que cresce ser o padrao dos q ocupa uma linha, enfim deve ter jeito mais facil de fazer isso
+    for (let i = 0; i < items.length; i++) {
+        items[i].style.maxWidth = `${items[0].clientWidth}px`
+    }
 }
+
+function redirect(loc) {
+    window.location.href = loc
+}
+
+btnSair.addEventListener('click', () => {
+    window.location.href = "login.html"
+})
 
 generateItems();
